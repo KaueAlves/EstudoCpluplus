@@ -1,18 +1,38 @@
 #include <iostream>
-#include <vector>
-#include <string>
+using std::endl;
+using std::cout;
 
-using namespace std;
+#include <string>
+using std::string;
+
+class GradeBook{
+    public:
+    GradeBook(string name){
+        setNomeDoCurso( name );
+    }
+
+    void setNomeDoCurso( string name )
+    {
+        nomeDoCurso = name;
+    }
+    
+    string getNomeDoCurso(){
+        return nomeDoCurso;
+    }
+
+    void mostrarMensagem(){
+        cout << "Bem vindo ao curso de C++ " << nomeDoCurso;
+    }
+
+    private:
+        string nomeDoCurso;
+};
 
 int main()
 {
-    int num;
-    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
 
-    for (const string& word : msg)
-    {
-        cout << word << " ";
-    }
-    cout << endl;
+  GradeBook livroDeNotas("Portugues");
+  livroDeNotas.mostrarMensagem();
 
+  return 0;
 }
