@@ -1,4 +1,4 @@
-#include "classes/LivroDeNotas.h"
+#include "LivroDeNotas.h"
 
 int main() {
     // Criar uma instância da classe LivroDeNotas
