@@ -2,6 +2,7 @@
 #define LIVRO_DE_NOTAS_H
 
 #include <string>
+using std::string;
 
 class LivroDeNotas {
 public:
