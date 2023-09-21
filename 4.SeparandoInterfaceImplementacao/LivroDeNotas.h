@@ -5,18 +5,14 @@
 using std::string;
 
 class LivroDeNotas {
-public:
-    // Construtor
-    LivroDeNotas(std::string nome);
+    public:      
+        LivroDeNotas(string);
+        void setNomeDoCurso(string);
+        string getNomeDoCurso();
+        void mostrarMensagem();
 
-    // Método para definir o nome do livro
-    void definirNome(std::string nome);
-
-    // Método para exibir o nome do livro
-    void exibirNome() const;
-
-private:
-    std::string nomeDoLivro;
+    private:
+        string nomeDoCurso;
 };
 
 #endif

@@ -5,9 +5,9 @@ using std::cout;
 #include <string>
 using std::string;
 
-class GradeBook{
+class LivroDeNotas{
     public:
-    GradeBook(string name){
+    LivroDeNotas(string name){
         setNomeDoCurso( name );
     }
 
@@ -31,7 +31,7 @@ class GradeBook{
 int main()
 {
 
-  GradeBook livroDeNotas("Portugues");
+  LivroDeNotas livroDeNotas("Portugues");
   livroDeNotas.mostrarMensagem();
 
   return 0;

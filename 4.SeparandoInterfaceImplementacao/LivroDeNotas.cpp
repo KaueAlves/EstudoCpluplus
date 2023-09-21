@@ -1,17 +1,27 @@
-#include "LivroDeNotas.h"
+// Livro de Notes 
+// Definição de Classe
 #include <iostream>
+using std::cout;
+using std::endl;
 
-// Implementação do construtor
-LivroDeNotas::LivroDeNotas(std::string nome) {
-    definirNome(nome);
+#include <string>
+using std::string;
+
+#include "LivroDeNotas.h"
+LivroDeNotas::LivroDeNotas(string name){
+    setNomeDoCurso( name );
 }
 
-// Implementação do método para definir o nome do livro
-void LivroDeNotas::definirNome(std::string nome) {
-    nomeDoLivro = nome;
+void LivroDeNotas::setNomeDoCurso( string name )
+{
+    nomeDoCurso = name;
 }
 
-// Implementação do método para exibir o nome do livro
-void LivroDeNotas::exibirNome() const {
-    std::cout << "Nome do Livro: " << nomeDoLivro << std::endl;
+string LivroDeNotas::getNomeDoCurso(){
+    return nomeDoCurso;
 }
+
+void LivroDeNotas::mostrarMensagem(){
+    cout << "Bem vindo ao curso de C++ " << nomeDoCurso;
+}
+
