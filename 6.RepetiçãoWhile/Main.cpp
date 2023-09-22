@@ -1,0 +1,14 @@
+#include "LivroDeNotas.h"
+#include <iostream>
+using std::cout;
+
+int main() {
+    // Criar uma instância da classe LivroDeNotas
+    LivroDeNotas meuLivro("Meu Livro de Anotações - Meu Livro de Anotações");
+    
+    meuLivro.mostrarMensagem();
+    meuLivro.determineMédia();
+
+
+    return 0;
+}
