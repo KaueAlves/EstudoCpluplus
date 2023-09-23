@@ -26,4 +26,8 @@
         uniform_real_distribution<double> distribution(x,y);
         return distribution(generator);
     }
-
+----
+    // Criando um alias ou apelido para a variavel.
+    // &refY faz referencia ao endereço de memoria de Y, fazendo com que toda operação que utilize o &refY, esteja na verdade utilizando o y.
+    int y = 10;
+    int &refY = y;
