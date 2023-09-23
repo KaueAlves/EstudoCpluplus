@@ -33,3 +33,4 @@ https://learn.microsoft.com/pt-br/cpp/standard-library/cpp-standard-library-refe
 | `<chrono>`	           | Lida com operações relacionadas ao tempo, incluindo durações, pontos no tempo e cálculos de tempo.                                      |
 | `<random>	`              | Fornece funcionalidades para geração de números aleatórios com diferentes distribuições.                                                |
 | `Irei_adicionar`         | A medida que for utilizando irei adicionando mais                                                                                       |
+
