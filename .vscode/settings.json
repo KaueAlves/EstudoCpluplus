@@ -55,6 +55,8 @@
         "xutility": "cpp",
         "iomanip": "cpp",
         "random": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "algorithm": "cpp",
+        "optional": "cpp"
     }
 }
