@@ -74,6 +74,21 @@ int main(int argc, char const *argv[])
     cout << "Função Calcular utilizando o ponteiro 'ptrCalcular', resultado: " << ptrCalcular(5,ptrDobrar) << endl; 
     cout << "Função Dobrar utilizando array de ponteiro f[2], resultado:" << f[0](4) << endl;
     cout << "Função Triplicar utilizando array de ponteiro f[2], resultado:" << f[1](5) << endl;
+    
+    // ARRAY de ponteiros
+    int* arrayDePonteiros[3];
+    int numero1 = 10;
+    int numero2 = 20;
+    int numero3 = 30;
+
+    arrayDePonteiros[0] = &numero1; 
+    arrayDePonteiros[1] = &numero2;  
+    arrayDePonteiros[2] = &numero3;
+
+    // Acessa os valores através dos ponteiros
+    for (int i = 0; i < 3; i++) {
+        std::cout << "Valor " << i << ": " << *arrayDePonteiros[i] << std::endl;
+    }
 
     return 0;
 }
